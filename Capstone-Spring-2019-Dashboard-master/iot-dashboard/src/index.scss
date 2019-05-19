@@ -1,0 +1,205 @@
+@import "./colors.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+/* a css */
+a {
+  color: $white;
+}
+
+
+/* nav bar css */
+.nav-tabs {
+  border-bottom: 1px solid $textColor;
+  background-color: $secondary;
+  padding-top: 10px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active  {
+  color: $highlight !important;
+  padding-top: 10px;
+  background: $bgColor;
+  border-color: $textColor !important;
+  border: 3px solid $textColor;
+  border-bottom: 0px !important;
+  box-shadow: none;
+  transition: background-color .1s ease;
+
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.focus {
+  padding-top: 0px;
+  background: $white;
+}
+
+.nav-tabs .nav-link:hover {
+  color: $white;
+  border-color: $textColor $textColor $secondary $textColor;
+  border-bottom: 4px solid $highlight;
+}
+
+.nav-tabs .nav-link:focus {
+  color: $highlight;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: $disabled;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: none;
+}
+
+
+/* primary button css */
+.btn-primary {
+  color: $white;
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color:$secondary;
+  border-color: $secondary;
+}
+
+.btn-primary:disabled {
+  color: $white;
+  background-color: $secondary;
+  border-color: $secondary;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: $white;
+  background-color: $secondary;
+  border-color: $cardHightlight;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(96,96,96,.5);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(96,96,96,.5);
+}
+
+/* card container for the first page css */
+.cardContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 80px;
+}
+
+/* card tab css */
+.cardTab {
+  background: $cardbgColor;
+  padding: 0;
+  border: 1px solid $cardHightlight;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 1;
+  margin: 30px 70px 10px 70px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.cardTab:hover {
+  box-shadow: 0px 3px 15px rgba(32, 158, 145,0.8);
+  cursor: pointer;
+}
+
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* form control css */
+.form-control {
+  text-align: center;
+  background: $secondary;
+  border: 0px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  color: $white
+}
+
+.form-control:focus {
+  background: $secondary;
+  color: $white;
+}
+
+.cardTabNonHome {
+  background: $cardbgColor;
+  padding: 0;
+  border: 1px solid $cardHightlight;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 1;
+  margin: 80px 70px 50px 70px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.card-row{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.subButton {
+  margin-top: 60px;
+  
+}
+
+#dropdown-basic-button {
+  margin-top: 10px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.submitButton {
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.kpi-value{
+  width: 80%;
+  background: $secondary;
+  color: $white;
+  text-align: center !important;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.kpi-comparison-holder {
+  margin: 10px;
+  padding: 10px;
+}
+
+.kpi-comparison-dropdown {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dateHolder {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
